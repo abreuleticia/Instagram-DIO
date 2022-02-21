@@ -12,10 +12,11 @@
 }
 
 .body{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    background-color: #fafafa;
+    background-color: rgb(226, 222, 222);
     position: relative;
-
 }
 
 .navbar{
@@ -24,7 +25,7 @@
     left: 0;
     width: 100%;
     height: 50px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     border-bottom: 1px solid #dfdfdf;
 }
 
@@ -38,19 +39,20 @@
 }
 
 .logo{
-    height: 100%;
+    height: 60%;
+    margin-left: 30%;
     margin-top: 5px;
 }
 
 .pesquisar{
     position: relative;
-    left: 30%;
+    left: 20%;
     transform: translateX(-50%);
-    width: 200px;
-    height: 25px;
-    background: #fafafa;
+    width: 300px;
+    height: 30px;
+    background: rgb(245, 245, 245);
     border: 1px solid #dfdfdf;
-    border-radius: 2px;
+    border-radius: 2.3px;
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
     text-transform: capitalize;
@@ -155,10 +157,106 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
-.post{
-    width: 100%0;
-    height: 600px;
+.post-card{
+    display: inline-block;
+    width: 100%;
     background: #fff;
     border: 1px solid #dfdfdf;
     margin-top: 40px;
+}
+
+.profile-pic-post{
+    display: flex;
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.profile-pic-post img{
+    padding: 1px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.info{
+    padding: 10px;
+}
+
+.post-foto{
+    padding-top: 20px;
+    height: 449px;
+    width: 598px;
+}
+
+.username-post{
+    flex-direction: column;
+    margin-top: 30px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    color: rgba(0, 0, 0);
+}
+
+.group-icons-post{
+    display: flex;
+    height: 30px;
+    margin: 3px;
+    left: 40%;
+    padding: 3px;
+}
+
+.icon-post{
+    height: 100%;
+    cursor: pointer;
+    margin: 0 5px;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Deixar a tela responsiva*/
+
+@media(max-width: 1024px){
+    .nav-wrapper{
+        width: 80%;
+    }
+
+    .post-card{
+        max-height: 700px;
+    }
+
+    .post-foto{
+        width: 100%;
+    }
+}
+
+@media(max-width: 650px){
+    body{
+        background-color: #ffffff;
+    }
+    .nav-wrapper{
+        width: 90%;
+    }
+
+    .post-card{
+        width: 100%;
+        max-height: 700px;
+    }
+
+    .coluna-esquerda{
+        border: 1px solid transparent;
+    }
 }

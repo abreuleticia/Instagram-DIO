@@ -33,7 +33,8 @@ body{
 }
 
 .instagram-phone img{
-    height: 50rem;
+    height: 40rem;
+    margin: 100%;
 }
 
 .instagram-continue{
