@@ -167,8 +167,8 @@
 
 .profile-pic-post{
     display: flex;
-    width: 70px;
-    height: 60px;
+    width: 65px;
+    height: 55px;
     border-radius: 50%;
     padding: 3px;
 }
@@ -188,8 +188,8 @@
 
 .post-foto{
     padding-top: 20px;
-    height: 449px;
-    width: 598px;
+    height: 430px;
+    width: 558px;
 }
 
 .username-post{
@@ -213,12 +213,39 @@
 .icon-post{
     height: 100%;
     cursor: pointer;
-    margin: 0 5px;
+    margin: 0 6px;
     display: flex;
 }
 
+.local-user{
+	width: 100%;
+	padding: 2px;
+    overflow: hidden;
+    text-align: left;
+	margin-left: 83px;
+	margin-top: -7px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
 
+.description{
+    display: flex;
+    width: 120px;
+    height: 50px;
+    padding: 3px;
+}
+.user-coment{
+    font-weight: bold;
+	width: 100%;
+    text-align: left;
+	margin-left: 3px;
+}
 
+.user-description{
+	margin-left: 5px;
+	text-align: left;
+	width: 100px;
+}
 
 
 
